@@ -1,9 +1,9 @@
 # bf
 ## a simple brainfuck interpreter
 
-[!NOTE]
+> [!NOTE]
 > This is a project I made in an afternoon, while at home with a fever.  
-> If you see obvious bugs, now you know why.
+> If you any see obvious bugs, now you know why.
 
 **bf** is a simple brainfuck interpreter that can read a program from either stdin
 or a file. It supports programs up to 32KB in size.  
@@ -24,7 +24,7 @@ where `INPUT-FILE` is an optional arguments, and is a valid path to a file conta
 a valid brainfuck program. If no argument is provided or if INPUT-FILE is `-`, **bf**
 will read the program from standard input.
 
-[!NOTE]
+> [!NOTE]
 > The program must under 32KB in size.
 
 ## building
@@ -39,6 +39,6 @@ To build the **x86-64 assembly** version run:
 $ make asm
 ```
 
-[!WARNING]
+> [!WARNING]
 > Both build targets will produce an executable called `bf` and will overwrite any
 > existing file with that name in the same directory as the `makefile`.
