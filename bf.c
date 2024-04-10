@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
         break;
       case '<':
         if (--dp < &cells[0])
-          dp = &cells[MAX_CELLS];
+          dp = &cells[MAX_CELLS - 1];
         break;
       case '+':
         ++(*dp);
