@@ -165,7 +165,7 @@ skip_bwd:
   jz switch_done
   /* level = 0 */
 skip_bwd_loop:
-  /* while (--ip < &prog[0]) */
+  /* while (--ip >= &prog[0]) */
   dec %rsi
   cmp 8(%rsp), %rsi
   jl switch_done
