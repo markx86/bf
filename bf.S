@@ -199,8 +199,8 @@ do_io:
   jmp switch_done
 
 def_case:
-  mov (%rsi), %al
-  movzx %al, %rax
+  mov (%rsi), %dil
+  movzx %dil, %rdi
   jmp do_exit
 
 clamp_ptr:
